@@ -5,7 +5,6 @@ apply plugin: 'kotlin-android-extensions'
 android {
 
     compileSdkVersion compileSdkVer
-    buildToolsVersion buildToolsVer
 
     defaultConfig {
         applicationId "net.kibotu.heartrateometer.app"
@@ -61,6 +60,7 @@ android {
     }
 
     // endregion
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
@@ -71,7 +71,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile project(path: ':heartrateometer')
+    api project(path: ':heartrateometer')
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
     implementation ('com.github.kibotu:KalmanRx:1.2.1') { transitive = true }

@@ -17,7 +17,6 @@ import io.reactivex.subjects.PublishSubject
 import org.apache.commons.collections4.queue.CircularFifoQueue
 import java.lang.ref.WeakReference
 import java.util.concurrent.atomic.AtomicBoolean
-import kotlin.reflect.KFunction1
 
 
 /**
